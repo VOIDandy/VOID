@@ -32,7 +32,8 @@ sf.handleInputKeypress = (e) => {
     }
 }
 
-sf.submitForm = () => {
+sf.submitForm = (e) => {
+    e.preventDefault();
     sf.input.style.transition = 'all .4s ease';
     sf.submitButton.style.transition = 'all .4s ease';
     sf.input.classList.remove('shown');
